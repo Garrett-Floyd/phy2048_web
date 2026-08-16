@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Vectors",
-  "body": " Vectors   A scalar is a physical quantity with a value only. The value can be positive or negative. A vector is a physical quantity with a value (magnitude) and a direction. Some examples are position, velocity, acceleration, force, momentum, and torque. Arrows can be used to represent vectors. The arrow's length represents the vectors magnitude and the arrow's direction represents the vectors direction. We use the symbol to denote that a vector is pointing into the page and the symbol to denote that a vector is pointing out of the page.    Vectors in Component Form  \"components\" denote how much a vector points in a particular direction.  : component pointing in the -direction.  : component pointing in the -direction.  denotes the positive -direction.  denotes the positive -direction.  In vector component form The magnitude of the vector is or Unit vector direction: dividing a vector by its magnitude gives a vector with magnitude one and points in the same direction (i.e. denotes direction of )     Find the magnitude and unit vector for the following two vectors...       and have the same magnitude, but point in different directions Bonus: Suppose a boat travels at in the direction of .       Vectors in Polar Form  The polar form a vector is represented using the magnitude of the vector and its angle relative to the positive x-axis (counter-clockwise, towards +y-axis). To calculate the cartesian components of a vector using its magnitude and angle use the following two equations: To calculate the magnitude and angle of the vector in terms of its cartesian coordinates use the following equations: if is positive then else if is negative then    's hidden pitfall  It is a common mistake for students forget to add degrees to the result of when is negative. To avoid making this mistake always check what quadrent your vector is in before taking the . Recall that the range of is degrees, so will always output a value in this range. If your vector is in quadrent one or four this is fine. However, if your vector is in quadrent two or three your going to need to add degrees to get the correct angle.   Polar form notation \"magnitude at an angle \".    Scaling Vectors  When multiplying a vector by a scalar , each cartesian component of the vector is multiplied by the scalar. Remember that scalars can be negative! If is negative, vector flips direction. Magnitude scales with absolute value of . If (positive) then the polar angle does not change. If (negative) then multiplying the vector by adds degrees to the polar angle (i.e., Flips direction).    Vector Addition  When adding vectors together, the components add When subtracting vectors, the components subtract    When adding or subtracting vectors, the polar coordinates do not add or subtract respectively.   Watch from 0:45 to end     Position Vector  The postion vector is a vector that points from the origin to location . Mathamatically the position is given as The distance from the origin to the point\/location is then The unit vector direction pointing from the origin to the location is    displacement  is defined as the change in the position vector over a period of time \" \".     You start at an initial position Then you walk 10 m at an angle west of north. What is your final position?        or west of north      Dot Product  In we talked about what happens when you multiply a vector with a scalar. In we talked about what happens when you add or subtract two vectors. What happens when you multiply two vectors together? Ends up there a two ways to multiply vectors together. The first way of multiplying vectors together is called the dot product and outputs a scalar. The dot product is a measure of how much the two vectors point in the same direction. There are two ways to calculate the dot product corresponding to using eithier the polar or component form of vectors.   Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed projection lines illustrate the components of each vector onto the direction of the other. A dashed line extends from vector B toward vector A, labeled . Another dashed line extends from vector A toward vector B, labeled . Small squares appear where each projection meets the opposite vector, marking right-angle intersections.   Diagram showing two vectors from a common point with angle θ between them and labeled component projections.    The polar method of computing the dot product uses the magnitude of the two vectors and the angle between them. Given two vectors and the polar form formula for taking the dot product is given by where is the angle between and . displays some important properties of the dot product. The dot product can be though as the length of one of the vectors mulipilied by the component of the second vector that is parrallel to the first. Which vector is taken to first be first or second in the dot product is irrelevent. Because of this we say that the dot product is symmetric . In other words,   In component form, the formula for the dot product is given by where is the number of dimensions and is an index ranging over integers that represent each dimension. For example, in 3 dimensional cartesian coordinates corresponds to , corresponds to , and corresponds to . Then in 3 dimensional cartesian coordinates the component form formula for the dot product reduces to     Cross Product  The second way of multiplying vectors together is the cross product. The cross product multiplies the components of two vectors that are perpendicular to each other, and gives a new direction that is perpendicular to both original vectors. Like the dot product there are two ways to calculate the cross product corresponding to using eithier the polar or component form of vectors.   Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed construction lines illustrate perpendicular components of each vector with respect to the other. One dashed line runs from vector B toward vector A, and another runs from vector A toward vector B. Each dashed segment is labeled with the corresponding perpendicular magnitude, or . Small squares mark the right-angle corners where these perpendiculars meet the vectors.   Diagram showing two vectors, A and B, with angle θ between them and dashed components labeled Asinθ and Bsinθ.    The polar formula for the magnitude of the cross product of vectors and is where is the angle between the vector. There are two things worth noting. The first is that The second is that outputs a number but earlier we said that the output of the cross product is a vector. While gives the magnitude of the cross product it doesn't give its direction.  To find the direction of the cross product you must use the right-hand rule. The right hand rules says that the direction of the cross product of and is given by the following procedure:   Flatten your right hand and put your thumb at a ninety degree angle to your fingers like your going to shake someones hand.    While maintaining this posture, point your fingers in the direction of .    Sweep your fingers into the direction of , but don't move your thumb or wrist.    Your thumb now points in the direction of the cross product.     By using the right-hand rule and noting that we see that Because of this we say that the cross product is antisymmetric .  Using the right hand rule we see that Noting that we see that Noting that we see that These relationships can be used to find the cross product in component form. Let and then We didn't discuss this earlier, but the cross product is also distributive which means that we can use \"first inner outer last\" to evaluate the cross product.   If you are familiar with matrices and determinants you can also use the following formula if you would find it more convenient:     Section Exercises    replacement_tag     "
+  "body": " Vectors   A scalar is a physical quantity with a value only. The value can be positive or negative. As an example, consider the windfinder temperature map . In this map temperature is a scalar because its value at any position on the map is just a number.  A vector is a physical quantity with a value (magnitude) and a direction. We typically represent a vector quantity with an arrow. As an example, consider the windfinder wind velocity map . In this map the wind velocity is a vector. The color of a point on the map tells us how fast the wind is blowing at that location. The direction of the arrow at that point tells us the direction the wind at that location.  Even though windfinder uses color to display the magnitude of the wind's velocity, in this class we typically denote the magnitude of a vector by the length of its arrow. A longer arrow has a greater magnitude and a shorter arrow has a lesser magnitude. The arrow's direction still represents the vectors direction. We use the symbol to denote that a vector is pointing into the page and the symbol to denote that a vector is pointing out of the page.    Doing Math on Vectors Graphically     Vectors in Component Form   A coordinate diagram shows a vector A extending upward and to the right from the origin. The vector is drawn in orange and forms the diagonal of a right triangle. A horizontal dashed orange line extends from the origin to the right, representing the horizontal component . A vertical dashed orange line extends upward from the end of the horizontal component to the vector endpoint, representing the vertical component . Black horizontal and vertical coordinate axes intersect at the origin. The horizontal axis is labeled x, and the vertical axis is labeled y.   A Vector decomposed into x and y components.    In we've draw a vector on an x,y coordinate system. As shown in the figure, every vector forms a right triangle with x and y axes. The components of the vector denote how much it points in a particular direction.  : component pointing in the -direction.  : component pointing in the -direction.  denotes the positive -direction.  denotes the positive -direction.  In vector component form The magnitude of the vector is or Unit vector direction: dividing a vector by its magnitude gives a vector with magnitude one and points in the same direction (i.e. denotes direction of )     Find the magnitude and unit vector for the following two vectors...       and have the same magnitude, but point in different directions Bonus: Suppose a boat travels at in the direction of .       Vectors in Polar Form  The polar form a vector is represented using the magnitude of the vector and its angle relative to the positive x-axis (counter-clockwise, towards +y-axis). To calculate the cartesian components of a vector using its magnitude and angle use the following two equations: To calculate the magnitude and angle of the vector in terms of its cartesian coordinates use the following equations: if is positive then else if is negative then    's hidden pitfall  It is a common mistake for students forget to add degrees to the result of when is negative. To avoid making this mistake always check what quadrent your vector is in before taking the . Recall that the range of is degrees, so will always output a value in this range. If your vector is in quadrent one or four this is fine. However, if your vector is in quadrent two or three your going to need to add degrees to get the correct angle.   Polar form notation \"magnitude at an angle \".    Scaling Vectors  When multiplying a vector by a scalar , each cartesian component of the vector is multiplied by the scalar. Remember that scalars can be negative! If is negative, vector flips direction. Magnitude scales with absolute value of . If (positive) then the polar angle does not change. If (negative) then multiplying the vector by adds degrees to the polar angle (i.e., Flips direction).    Vector Addition  When adding vectors together, the components add When subtracting vectors, the components subtract    When adding or subtracting vectors, the polar coordinates do not add or subtract respectively.     Position Vector    The postion is a vector that points from the origin to location . Mathamatically the position is given as     The distance from the origin to the point\/location is then The unit vector direction pointing from the origin to the location is     Displacement Vector     displacement  is defined as the change in the position vector over a period of time \" \". where and .      You start at an initial position Then you walk 10 m at an angle west of north. What is your final position?        or west of north      Dot Product  In we talked about what happens when you multiply a vector with a scalar. In we talked about what happens when you add or subtract two vectors. What happens when you multiply two vectors together? Ends up there a two ways to multiply vectors together. The first way of multiplying vectors together is called the dot product and outputs a scalar. The dot product is a measure of how much the two vectors point in the same direction. There are two ways to calculate the dot product corresponding to using eithier the polar or component form of vectors.   Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed projection lines illustrate the components of each vector onto the direction of the other. A dashed line extends from vector B toward vector A, labeled . Another dashed line extends from vector A toward vector B, labeled . Small squares appear where each projection meets the opposite vector, marking right-angle intersections.   Diagram showing two vectors from a common point with angle θ between them and labeled component projections.    The polar method of computing the dot product uses the magnitude of the two vectors and the angle between them. Given two vectors and the polar form formula for taking the dot product is given by where is the angle between and . displays some important properties of the dot product. The dot product can be though as the length of one of the vectors mulipilied by the component of the second vector that is parrallel to the first. Which vector is taken to first be first or second in the dot product is irrelevent. Because of this we say that the dot product is symmetric . In other words,   In component form, the formula for the dot product is given by where is the number of dimensions and is an index ranging over integers that represent each dimension. For example, in 3 dimensional cartesian coordinates corresponds to , corresponds to , and corresponds to . Then in 3 dimensional cartesian coordinates the component form formula for the dot product reduces to     Cross Product  The second way of multiplying vectors together is the cross product. The cross product multiplies the components of two vectors that are perpendicular to each other, and gives a new direction that is perpendicular to both original vectors. Like the dot product there are two ways to calculate the cross product corresponding to using eithier the polar or component form of vectors.   Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed construction lines illustrate perpendicular components of each vector with respect to the other. One dashed line runs from vector B toward vector A, and another runs from vector A toward vector B. Each dashed segment is labeled with the corresponding perpendicular magnitude, or . Small squares mark the right-angle corners where these perpendiculars meet the vectors.   Diagram showing two vectors, A and B, with angle θ between them and dashed components labeled Asinθ and Bsinθ.    The polar formula for the magnitude of the cross product of vectors and is where is the angle between the vector. There are two things worth noting. The first is that The second is that outputs a number but earlier we said that the output of the cross product is a vector. While gives the magnitude of the cross product it doesn't give its direction.  To find the direction of the cross product you must use the right-hand rule. The right hand rules says that the direction of the cross product of and is given by the following procedure:   Flatten your right hand and put your thumb at a ninety degree angle to your fingers like your going to shake someones hand.    While maintaining this posture, point your fingers in the direction of .    Sweep your fingers into the direction of , but don't move your thumb or wrist.    Your thumb now points in the direction of the cross product.     By using the right-hand rule and noting that we see that Because of this we say that the cross product is antisymmetric .  Using the right hand rule we see that Noting that we see that Noting that we see that These relationships can be used to find the cross product in component form. Let and then We didn't discuss this earlier, but the cross product is also distributive which means that we can use \"first inner outer last\" to evaluate the cross product.   If you are familiar with matrices and determinants you can also use the following formula if you would find it more convenient:     Section Exercises    replacement_tag     "
 },
 {
   "id": "sec-vectors-2-1",
@@ -178,14 +178,32 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "scalar vector "
+  "body": "scalar "
 },
 {
-  "id": "subsec-vect-comp-form-3",
+  "id": "sec-vectors-2-2",
   "level": "2",
-  "url": "sec-vectors.html#subsec-vect-comp-form-3",
-  "type": "Example",
+  "url": "sec-vectors.html#sec-vectors-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vector "
+},
+{
+  "id": "fig-vect-cart-decomp",
+  "level": "2",
+  "url": "sec-vectors.html#fig-vect-cart-decomp",
+  "type": "Figure",
   "number": "2.1.1",
+  "title": "",
+  "body": " A coordinate diagram shows a vector A extending upward and to the right from the origin. The vector is drawn in orange and forms the diagonal of a right triangle. A horizontal dashed orange line extends from the origin to the right, representing the horizontal component . A vertical dashed orange line extends upward from the end of the horizontal component to the vector endpoint, representing the vertical component . Black horizontal and vertical coordinate axes intersect at the origin. The horizontal axis is labeled x, and the vertical axis is labeled y.   A Vector decomposed into x and y components.   "
+},
+{
+  "id": "subsec-vect-comp-form-4",
+  "level": "2",
+  "url": "sec-vectors.html#subsec-vect-comp-form-4",
+  "type": "Example",
+  "number": "2.1.2",
   "title": "",
   "body": "  Find the magnitude and unit vector for the following two vectors...       and have the same magnitude, but point in different directions Bonus: Suppose a boat travels at in the direction of .    "
 },
@@ -194,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors.html#subsec-vect-polar-form-3",
   "type": "Warning",
-  "number": "2.1.2",
+  "number": "2.1.3",
   "title": "<span class=\"process-math\">\\(\\arctan\\)<\/span>’s hidden pitfall.",
   "body": " 's hidden pitfall  It is a common mistake for students forget to add degrees to the result of when is negative. To avoid making this mistake always check what quadrent your vector is in before taking the . Recall that the range of is degrees, so will always output a value in this range. If your vector is in quadrent one or four this is fine. However, if your vector is in quadrent two or three your going to need to add degrees to get the correct angle.  "
 },
@@ -203,25 +221,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors.html#subsec-vec-add-3",
   "type": "Warning",
-  "number": "2.1.3",
+  "number": "2.1.4",
   "title": "",
   "body": " When adding or subtracting vectors, the polar coordinates do not add or subtract respectively.  "
 },
 {
-  "id": "subsec-pos-vect-3",
+  "id": "def-position",
   "level": "2",
-  "url": "sec-vectors.html#subsec-pos-vect-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-vectors.html#def-position",
+  "type": "Definition",
+  "number": "2.1.5",
   "title": "",
-  "body": "displacement "
+  "body": "  The postion is a vector that points from the origin to location . Mathamatically the position is given as    "
 },
 {
-  "id": "subsec-pos-vect-4",
+  "id": "def-",
   "level": "2",
-  "url": "sec-vectors.html#subsec-pos-vect-4",
+  "url": "sec-vectors.html#def-",
+  "type": "Definition",
+  "number": "2.1.6",
+  "title": "",
+  "body": "   displacement  is defined as the change in the position vector over a period of time \" \". where and .   "
+},
+{
+  "id": "subsec-displacement-vect-3",
+  "level": "2",
+  "url": "sec-vectors.html#subsec-displacement-vect-3",
   "type": "Example",
-  "number": "2.1.4",
+  "number": "2.1.7",
   "title": "",
   "body": "  You start at an initial position Then you walk 10 m at an angle west of north. What is your final position?        or west of north   "
 },
@@ -230,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors.html#fig-dot-prod-polar",
   "type": "Figure",
-  "number": "2.1.5",
+  "number": "2.1.8",
   "title": "",
   "body": " Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed projection lines illustrate the components of each vector onto the direction of the other. A dashed line extends from vector B toward vector A, labeled . Another dashed line extends from vector A toward vector B, labeled . Small squares appear where each projection meets the opposite vector, marking right-angle intersections.   Diagram showing two vectors from a common point with angle θ between them and labeled component projections.   "
 },
@@ -248,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors.html#fig-cross-prod-polar",
   "type": "Figure",
-  "number": "2.1.6",
+  "number": "2.1.9",
   "title": "",
   "body": " Two arrows originating from the same lower-left point and extending in different directions. The left arrow points upward and slightly right and is labeled B near its tip. The right arrow points upward and strongly to the right and is labeled A near its tip. A curved arc between the two arrows marks the angle . Two dashed construction lines illustrate perpendicular components of each vector with respect to the other. One dashed line runs from vector B toward vector A, and another runs from vector A toward vector B. Each dashed segment is labeled with the corresponding perpendicular magnitude, or . Small squares mark the right-angle corners where these perpendiculars meet the vectors.   Diagram showing two vectors, A and B, with angle θ between them and dashed components labeled Asinθ and Bsinθ.   "
 },
@@ -266,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors.html#exercises-sec-replacement_tag5-2",
   "type": "Exercise",
-  "number": "2.1.8.1",
+  "number": "2.1.10.1",
   "title": "",
   "body": "  replacement_tag   "
 },
@@ -375,44 +402,53 @@ var ptx_lunr_docs = [
   "url": "sec-pos-vel-speed-acc.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Position, Velocity, Speed and Acceleration",
-  "body": " Position, Velocity, Speed and Acceleration  The position of an object is that object's location. For one dimensional motion along the x-axis, the position vector is The sign of indicates the direction of (i.e., to the left or right of the origin).  The velocity of an object is that objects \"change in position\" over time. For one dimensional motion along the x-axis, the velocity vector is where and The sign of indicates direction of motion. when is positive, the object moves to the right ( becomes more positive over time...) when is negative, the object moves to the left  becomes more negative over time...)  The speed of an object is magnitude of that objects velocity. For one dimensional motion along the x-axis, the speed is Speed is always a positive value. Speed is often denoted as for the magnitude of .  The Acceleration of an object is the object's \"change in velocity\" over time. For one dimensional motion along the x-axis, the acceleration is where and The sign of indicates the direction that velocity changes. When is positive, increases to the right ( becomes more positive over time...) When is negative, increases to the left ( becomes more negative over time...) Acceleration is the second-derivative of position. For one dimensional motion along the x-axis, this gives Velocity is slope of position, and acceleration is concavity of position. We can use calculus to find the local maxima and minima of position. For a maximum we must have For a minimum we must have   "
+  "title": "1D Kinematic Definitions",
+  "body": " 1D Kinematic Definitions   One Dimensional Position  We discussed position in . The x component of position is     One Dimensional Displacement  We discussed displacement in . The x component of displacement is     One Dimensional Velocity    The average velocity over a period of time is the change in position divided by the change in time for that interval.     The x-component of the average velocity is     In the limit that the average velocity becomes the instantaneous velocity     The x-component of the instantaneous velocity is     Speed  Speed is the magnitude of velocity. Speed describes how fast your going, but doesn't say anything about which direction your going.    The average speed ( ) of an object over a period of time is     Sometimes students confuse displacement and distance. Remember displacement is the change in position. So if you run four laps around a standard track your total distance is one mile, but total displacement is zero.    One Dimensional Acceleration    The average acceleration of an object over a period of time is     The x-component of average acceleration is     In the limit that the average acceleration becomes the instantaneous acceleration     The x-component of the instantaneous acceleration is    "
 },
 {
-  "id": "sec-pos-vel-speed-acc-2",
+  "id": "def-avg-vel",
   "level": "2",
-  "url": "sec-pos-vel-speed-acc.html#sec-pos-vel-speed-acc-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-pos-vel-speed-acc.html#def-avg-vel",
+  "type": "Definition",
+  "number": "3.1.1",
   "title": "",
-  "body": "position "
+  "body": "  The average velocity over a period of time is the change in position divided by the change in time for that interval.    "
 },
 {
-  "id": "sec-pos-vel-speed-acc-3",
+  "id": "def-inst-vel",
   "level": "2",
-  "url": "sec-pos-vel-speed-acc.html#sec-pos-vel-speed-acc-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-pos-vel-speed-acc.html#def-inst-vel",
+  "type": "Definition",
+  "number": "3.1.2",
   "title": "",
-  "body": "velocity "
+  "body": "  In the limit that the average velocity becomes the instantaneous velocity    "
 },
 {
-  "id": "sec-pos-vel-speed-acc-4",
+  "id": "def-speed",
   "level": "2",
-  "url": "sec-pos-vel-speed-acc.html#sec-pos-vel-speed-acc-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-pos-vel-speed-acc.html#def-speed",
+  "type": "Definition",
+  "number": "3.1.3",
   "title": "",
-  "body": "speed "
+  "body": "  The average speed ( ) of an object over a period of time is    "
 },
 {
-  "id": "sec-pos-vel-speed-acc-5",
+  "id": "def-avg-acc",
   "level": "2",
-  "url": "sec-pos-vel-speed-acc.html#sec-pos-vel-speed-acc-5",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-pos-vel-speed-acc.html#def-avg-acc",
+  "type": "Definition",
+  "number": "3.1.4",
   "title": "",
-  "body": "Acceleration "
+  "body": "  The average acceleration of an object over a period of time is    "
+},
+{
+  "id": "def-inst-acc",
+  "level": "2",
+  "url": "sec-pos-vel-speed-acc.html#def-inst-acc",
+  "type": "Definition",
+  "number": "3.1.5",
+  "title": "",
+  "body": "  In the limit that the average acceleration becomes the instantaneous acceleration    "
 },
 {
   "id": "sec-integral-eqs-motion",
@@ -421,23 +457,32 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Integral Equations of Motion",
-  "body": " Integral Equations of Motion  If velocity represents \"change in position over \"time\", then adding up the velocity over time (integration) will give the overall change in position during that period of time. To get the change in the x-component of position integrate the x-component of the velocity from an initial time (or starting time) to a final time . Given an initial x-component of the position and velocity you can find the x-component of position at any other time. Choosing the initial x-component of position to be named and the final x-component of position to be named we get Remember that velocity can be positive and negative, so an object moving around and ending at a final position equal to its initial position has no net \"change in position\". If , then (ie, for one dimensional motion the object has switched directions of motion to return to its original position!). This \"change in position\" is different than the total distance travelled! Distance travelled is found by ignoring direction of motion. For one dimensional motion along the x-axis the distance travelled is equal to In other words, distance is the integral of speed (not velocity)! Similarly, integrating the x-component of acceleration gives the overall change in the x-component of velocity. Choosing the x-component of initial velocity to be named and the x-compoenent of the final velocity to be name gives   "
+  "body": " Integral Equations of Motion                "
 },
 {
-  "id": "sec-t-avg-and-inst-kinem",
-  "level": "1",
-  "url": "sec-t-avg-and-inst-kinem.html",
-  "type": "Section",
-  "number": "3.3",
-  "title": "1D Time Averaged and Instantaneous Kinematic Definitions",
-  "body": " 1D Time Averaged and Instantaneous Kinematic Definitions   Time Averaged Values  The x-component of the average velocity is given by This equation adds up the x-component of the average velocity over the interval of time then divides by the interval . The average velocity equals the change in position divided by the interval of time.  For one dimensional motion along the x-axis the average speed is given by The average speed is the total distance travelled divided by interval of time. Note that if the direction of motion changes then   The x-component of the average acceleration in given by The average acceleration equals the change in velocity divided by the interval of time.    Instantaneous Velocity and Acceleration   as average value becomes \"instantaneas\" value   "
+  "id": "thm-1d-int-eq-vx",
+  "level": "2",
+  "url": "sec-integral-eqs-motion.html#thm-1d-int-eq-vx",
+  "type": "Theorem",
+  "number": "3.2.1",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "thm-1d-int-eq-x",
+  "level": "2",
+  "url": "sec-integral-eqs-motion.html#thm-1d-int-eq-x",
+  "type": "Theorem",
+  "number": "3.2.2",
+  "title": "",
+  "body": "      "
 },
 {
   "id": "exercises-ch-1d-kinematic-defs",
   "level": "1",
   "url": "exercises-ch-1d-kinematic-defs.html",
   "type": "Exercises",
-  "number": "3.4",
+  "number": "3.3",
   "title": "Chapter Exercises",
   "body": " Chapter Exercises    A car starts from rest ( meters per second) at time seconds. Its acceleration as a function of time is given by . What is its velocity as a function of time?      A train has a position meters at time seconds. Its velocity as a function of time is given by . What is its acceleration as a function of time?      An airplane has a position meters at time seconds. Its velocity as a function of time is given by . What is its position when seconds?      A car starts in motion to the left ( meters per second) at time seconds. Its acceleration as a function of time is given by , where is some constant. What is its velocity as a function of time?    "
 },
@@ -446,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-ch-1d-kinematic-defs.html#exercises-ch-1d-kinematic-defs-2",
   "type": "Exercise",
-  "number": "3.4.1",
+  "number": "3.3.1",
   "title": "",
   "body": "  A car starts from rest ( meters per second) at time seconds. Its acceleration as a function of time is given by . What is its velocity as a function of time?   "
 },
@@ -455,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-ch-1d-kinematic-defs.html#exercises-ch-1d-kinematic-defs-3",
   "type": "Exercise",
-  "number": "3.4.2",
+  "number": "3.3.2",
   "title": "",
   "body": "  A train has a position meters at time seconds. Its velocity as a function of time is given by . What is its acceleration as a function of time?   "
 },
@@ -464,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-ch-1d-kinematic-defs.html#exercises-ch-1d-kinematic-defs-4",
   "type": "Exercise",
-  "number": "3.4.3",
+  "number": "3.3.3",
   "title": "",
   "body": "  An airplane has a position meters at time seconds. Its velocity as a function of time is given by . What is its position when seconds?   "
 },
@@ -473,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-ch-1d-kinematic-defs.html#exercises-ch-1d-kinematic-defs-5",
   "type": "Exercise",
-  "number": "3.4.4",
+  "number": "3.3.4",
   "title": "",
   "body": "  A car starts in motion to the left ( meters per second) at time seconds. Its acceleration as a function of time is given by , where is some constant. What is its velocity as a function of time?   "
 },
@@ -484,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Deriving 1D Kinematic Equations",
-  "body": " Deriving 1D Kinematic Equations  In general, the acceleration is a function of time. However, in many situations we can approximate the acceleration in the x-direction as a constant. Because this approximation is made frequently, we will solve in advance for the x-component of velocity and position when = constant.    When the x-component of the acceleration is constant     Evaluating equation with constant acceleration gives the desired result.      When the x-component of the acceleration is constant     Plugging with renamed to into equation gives       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives     "
+  "body": " Deriving 1D Kinematic Equations  In general, the acceleration is a function of time. However, in many situations we can approximate the acceleration in the x-direction as a constant. Because this approximation is made frequently, we will solve in advance for the x-component of velocity and position when = constant.    When the x-component of the acceleration is constant     Evaluating with a constant x-component of acceleration gives     If the x-component of acceleration is constant then by the definition of average acceleration ( ) we have Rearranging, we get       When the x-component of the acceleration is constant     Plugging with renamed to into equation gives     As we proved in there is a linear relationship between the x-component of the velocity and if the x-component of the acceleration is zero. For straight lines ( ) the average y value is the average of the initial y value and the final y value. In our case From we have Plugging this in to our equation for gives On the other hand, the definition of average velocity ( ) gives the equation Setting these two equations equal to each other, we get       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives       When the x-component of the acceleration is constant     We rearrange to obtain Plugging this into gives     "
 },
 {
   "id": "thm-1d-const-a-1",
@@ -493,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.1",
   "title": "",
-  "body": "  When the x-component of the acceleration is constant     Evaluating equation with constant acceleration gives the desired result.   "
+  "body": "  When the x-component of the acceleration is constant     Evaluating with a constant x-component of acceleration gives     If the x-component of acceleration is constant then by the definition of average acceleration ( ) we have Rearranging, we get    "
 },
 {
   "id": "thm-1d-const-a-2",
@@ -502,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.2",
   "title": "",
-  "body": "  When the x-component of the acceleration is constant     Plugging with renamed to into equation gives    "
+  "body": "  When the x-component of the acceleration is constant     Plugging with renamed to into equation gives     As we proved in there is a linear relationship between the x-component of the velocity and if the x-component of the acceleration is zero. For straight lines ( ) the average y value is the average of the initial y value and the final y value. In our case From we have Plugging this in to our equation for gives On the other hand, the definition of average velocity ( ) gives the equation Setting these two equations equal to each other, we get    "
 },
 {
   "id": "thm-1d-const-a-3",
