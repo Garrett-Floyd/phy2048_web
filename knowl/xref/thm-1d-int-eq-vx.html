@@ -19,7 +19,7 @@
 </head>
 <body class="ignore-math">
 <article class="theorem theorem-like"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical">
 <div class="displaymath process-math">
@@ -29,6 +29,35 @@ v_{x,f} = \int_{t_{i}}^{t_{f}}a_{x}dt + v_{x,i}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-1d-int-eq-vx-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 3.2.1"><a href="#thm-1d-int-eq-vx" title="Copy heading and permalink for Theorem 3.2.1" aria-label="Copy heading and permalink for Theorem 3.2.1">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-integral-eqs-motion.html#thm-1d-int-eq-vx">in-context</a></span>
+<div class="autopermalink" data-description="Theorem 3.2.2"><a href="#thm-1d-int-eq-vx" title="Copy heading and permalink for Theorem 3.2.2" aria-label="Copy heading and permalink for Theorem 3.2.2">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">Recall from equation <a href="sec-pos-vel-speed-acc.html#eq-1d-acc-def" class="xref" data-knowl="./knowl/xref/eq-1d-acc-def.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.1.2">(3.1.2)</a> that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-1d-acc-def.html">
+\begin{equation*}
+a_{x} = \frac{dv_{x}}{dt}.
+\end{equation*}
+</div>
+<div class="para">Integrating both sides with respect to time yields</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-1d-acc-def.html">
+\begin{equation*}
+\int_{t_{i}}^{t_{f}} a_{x} dt = \int_{t_{i}}^{t_{f}} \frac{dv_{x}}{dt} dt.
+\end{equation*}
+</div>
+<div class="para">We now use the chain rule on the right hand side of the equation to transform it from an integral with respect to <span class="process-math">\(t\)</span> to an integral with respect to <span class="process-math">\(v_{x}\text{.}\)</span> This gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-1d-acc-def.html">
+\begin{align*}
+\int_{t_{i}}^{t_{f}} a_{x} dt \amp = \int_{v_{x,i}}^{v_{x,f}} dv_{x} \\
+\\
+\int_{t_{i}}^{t_{f}} a_{x} dt \amp = v_{x} \Bigg|^{v_{x,f}}_{v_{x,i}} \\
+\\
+\int_{t_{i}}^{t_{f}} a_{x} dt \amp = v_{x,f} - v_{x,i} \\
+\\
+\int_{t_{i}}^{t_{f}} a_{x} dt + v_{x,i} \amp = v_{x,f} \\
+\\
+v_{x,f} \amp = \int_{t_{i}}^{t_{f}} a_{x} dt + v_{x,i}. 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-1d-int-eq-vx-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 3.2.2.1"><a href="#thm-1d-int-eq-vx-2" title="Copy heading and permalink for Proof 3.2.2.1" aria-label="Copy heading and permalink for Proof 3.2.2.1">🔗</a></div></article></details><span class="incontext"><a class="internal" href="sec-integral-eqs-motion.html#thm-1d-int-eq-vx">in-context</a></span>
 </body>
 </html>
